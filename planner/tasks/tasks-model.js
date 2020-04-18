@@ -7,7 +7,7 @@ module.exports = {
 
 function find() {
   return db("tasks")
-        .select("projects.project_name as project name")
+        .select("projects.name as project name")
         .select("projects.description as project description")
         .select("tasks.description as task description")
         .select("tasks.notes as task notes")

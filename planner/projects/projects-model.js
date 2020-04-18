@@ -10,9 +10,9 @@ function find() {
   return db("projects")
 }
 
-function findById() {
+function findById(id) {
   return db("projects")
-        .where("id", projects_id)
+        .where("id", id)
         .first()
 }
 

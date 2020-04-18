@@ -17,11 +17,15 @@ router.get('/', (req, res, next) => {
 
 
 router.get('/:id', (req, res, next) => {
-    const {id} = req.params;
+    const { id } = req.params;
     db.findById(id)
     .then(projects => {
-        res.status(200).json(projects);
-    })
+    if (projects) {
+      res.json(projects);
+    } else {
+      res.status(404).json({ message: 'Could not find projects with given id.' })
+    }
+  })
     .catch(next);
 });
 
