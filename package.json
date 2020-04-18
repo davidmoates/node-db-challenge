@@ -1,0 +1,26 @@
+{
+  "name": "node-db-challenge",
+  "version": "1.0.0",
+  "description": "## Description",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidmoates/node-db-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidmoates/node-db-challenge/issues"
+  },
+  "homepage": "https://github.com/davidmoates/node-db-challenge#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "knex": "^0.20.15",
+    "nodemon": "^2.0.3",
+    "sqlite3": "^4.1.1"
+  }
+}
